@@ -17,7 +17,6 @@ module.exports = async (ctx, next) => {
     }
     ctx.response.body = JSON.stringify(errorMsg)
   }
- 
-  console.log(filePath)
+
   await next()
 }
